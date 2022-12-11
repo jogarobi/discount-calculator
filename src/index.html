@@ -5,6 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css">
    <title>Income Discount Calculator</title>
 </head>
 
@@ -16,19 +18,25 @@
          <div class="calculator__form">
             <div class="calculator__row">
                <div class="calculator__group">
-                  <label for="salary-input">Monthly salary</label>
+                  <label for="salary-input" class="required">Monthly salary</label>
                   <input type="number" id="salary-input">
+                  <img src="./assets/dollar-sign.svg">
                </div>
                <div class="calculator__group">
                   <label for="overtime-input">Overtime</label>
                   <input type="number" id="overtime-input">
+                  <img src="./assets/dollar-sign.svg">
                </div>
                <div class="calculator__group">
                   <label for="bonus-input">Bonifications</label>
                   <input type="number" id="bonus-input">
+                  <img src="./assets/dollar-sign.svg">
                </div>
             </div>
-            <button class="btn btn--primary">Calculate discounts</button>
+            <div>
+               <p class="calculator__message">All amounts are calculated in Dominican pesos (DOP)</p>
+               <button class="btn btn--primary">Calculate discounts</button>
+            </div>
          </div>
       </section>
       <section class="results">
@@ -48,7 +56,7 @@
          </div>
          <div class="results__group">
             <div class="results__income">
-               <span>Net income</span>
+               <span class="highlighted">Net income</span>
                <h2>DOP$32,298.17</h2>
                <span>87% of gross income</span>
             </div>

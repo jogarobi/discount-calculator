@@ -1,0 +1,221 @@
+:root {
+   --clr-black: #212121;
+   --clr-white: #fff;
+   --clr-green: #a6ffb5;
+   --clr-red: #ff3b3b;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Satoshi", sans-serif;
+}
+
+html {
+   font-size: calc(80% + 0.8vw);
+}
+
+body {
+   min-height: 100vh;
+}
+
+section {
+   padding-inline: calc(1.5rem + 0.6vw);
+}
+
+input:focus-visible {
+   outline: 2px solid var(--clr-blac);
+}
+
+main,
+.calculator,
+.calculator__row,
+.calculator__group,
+.calculator__form,
+.results,
+.results__group,
+.results__discount,
+.results__income {
+   display: flex;
+}
+
+main,
+.calculator,
+.calculator__form,
+.calculator__group,
+.results,
+.results__discount,
+.results__income {
+   flex-direction: column;
+}
+
+.calculator,
+.calculator__row,
+.results__discount {
+   justify-content: center;
+}
+
+.calculator {
+   padding-block: 40px 55px;
+   gap: 40px;
+   text-align: center;
+   color: var(--clr-white);
+   background-color: var(--clr-black);
+}
+
+.calculator__form {
+   gap: 60px;
+}
+
+.calculator__title {
+   font-size: 1.9rem;
+   font-weight: 600;
+}
+
+.calculator__row {
+   flex-wrap: wrap;
+   gap: 60px;
+}
+
+.calculator__group {
+   position: relative;
+   width: 100%;
+   text-align: start;
+   justify-content: flex-start;
+}
+
+.calculator__group label {
+   position: relative;
+   width: max-content;
+   margin-block-end: 10px;
+   font-weight: 500;
+   font-size: 1.2rem;
+}
+
+.calculator__group input {
+   width: 100%;
+   padding-block: 12px;
+   padding-inline: 39px 10px;
+   font-weight: 600;
+   height: 55px;
+   font-size: 1.15rem;
+   border: 2px solid transparent;
+   border-radius: 2px;
+}
+
+.calculator__group > img {
+   position: absolute;
+   width: 12px;
+   top: 57.5%;
+   left: 16px;
+}
+
+.calculator__message {
+   font-size: 1.15rem;
+   padding-block-end: 30px;
+}
+
+.calculator .btn--primary {
+   align-self: center;
+}
+
+.results {
+   padding-block: 60px;
+   gap: 50px;
+   color: var(--clr-black);
+}
+
+.results__group {
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px;
+}
+
+.results__discount {
+   text-align: center;
+   gap: 8px;
+}
+
+.results__discount > span {
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+.results__discount > h3 {
+   font-size: 1.7rem;
+}
+
+.results__income {
+   text-align: center;
+   gap: 13px;
+}
+
+.results__income > span {
+   align-self: center;
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+.results__income > h2 {
+   font-size: 2.4rem;
+}
+
+.btn {
+   padding: 16px 38px;
+   font-size: 1.15rem;
+   border-color: transparent;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.btn--primary {
+   font-weight: 700;
+   color: var(--clr-black);
+   background-color: var(--clr-green);
+}
+
+.btn--primary:hover {
+   filter: brightness(85%);
+}
+
+.required::after {
+   content: "*";
+   position: absolute;
+   left: calc(100% + 5px);
+   color: var(--clr-red);
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.highlighted {
+   padding: 6px 10px;
+   font-weight: bold;
+   background-color: var(--clr-green);
+   border-radius: 2px;
+}
+
+.required-error input {
+   border: 2px solid var(--clr-red);
+}
+
+.required-error::after {
+   content: "This field is required.";
+   position: absolute;
+   top: calc(100% + 12px);
+   color: var(--clr-red);
+   font-size: 1.1rem;
+   font-weight: 500;
+}
+
+@media all and (min-width: 796px) {
+   html {
+      font-size: 93%;
+   }
+   .calculator__group {
+      max-width: 245px;
+   }
+   .calculator__group > img {
+      top: 58%;
+   }
+}
