@@ -33,7 +33,6 @@ main,
 .calculator__row,
 .calculator__group,
 .calculator__form,
-.results,
 .results__group,
 .results__discount,
 .results__income {
@@ -121,6 +120,8 @@ main,
 }
 
 .results {
+   display: flex;
+   visibility: hidden;
    padding-block: 60px;
    gap: 50px;
    color: var(--clr-black);
