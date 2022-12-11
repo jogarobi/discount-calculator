@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Income Discount Calculator</title>
+</head>
+
+<body>
+
+   <main>
+      <section class="calculator">
+         <h1 class="calculator__title">Income discount calculator</h1>
+         <div class="calculator__form">
+            <div class="calculator__row">
+               <div class="calculator__group">
+                  <label for="salary-input">Monthly salary</label>
+                  <input type="number" id="salary-input">
+               </div>
+               <div class="calculator__group">
+                  <label for="overtime-input">Overtime</label>
+                  <input type="number" id="overtime-input">
+               </div>
+               <div class="calculator__group">
+                  <label for="bonus-input">Bonifications</label>
+                  <input type="number" id="bonus-input">
+               </div>
+            </div>
+            <button class="btn btn--primary">Calculate discounts</button>
+         </div>
+      </section>
+      <section class="results">
+         <div class="results__group">
+            <div class="results__discount">
+               <span>Health insurance (SFS)</span>
+               <h3>DOP$1,124.44</h3>
+            </div>
+            <div class="results__discount">
+               <span>Pension fund (AFP)</span>
+               <h3>DOP$1,059.23</h3>
+            </div>
+            <div class="results__discount">
+               <span>Income tax (ISR)</span>
+               <h3>DOP$256.18</h3>
+            </div>
+         </div>
+         <div class="results__group">
+            <div class="results__income">
+               <span>Net income</span>
+               <h2>DOP$32,298.17</h2>
+               <span>87% of gross income</span>
+            </div>
+         </div>
+      </section>
+   </main>
+
+</body>
+
+</html>
