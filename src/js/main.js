@@ -50,7 +50,7 @@ $("#calculate-discounts-btn").addEventListener("click", () => {
    ).innerText = `${grossIncomePercentage}% of gross income`;
 });
 
-// Remove error message when user starts typing in again
+// Remove error message when user starts typing in after error
 $("#salary-input").addEventListener("keyup", () =>
    $("#salary-input-group").classList.remove("required-error")
 );
