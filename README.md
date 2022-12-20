@@ -44,4 +44,4 @@ Since it is a basic calculator, a simple form in HTML & CSS will be more than en
 
 ![Hi-fi wireframe.jpg](https://butiblee.sirv.com/Images/Hi-fi_wireframe.jpg)
 
-I did not include wireframes for mobile since there aren’t notable differences other than the change to vertical flow.*
+I did not include wireframes for mobile devices since there aren’t notable differences other than the change to vertical flow.*
